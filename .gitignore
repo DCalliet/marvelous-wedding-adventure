@@ -1,0 +1,12 @@
+.DS_Store
+package-lock.json
+
+credentials.json
+gapitoken.json
+
+node_modules/
+build/
+scratch/
+
+dump.rdb
+**/*.key

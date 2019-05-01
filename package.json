@@ -1,0 +1,48 @@
+{
+  "name": "message_blast",
+  "version": "0.1.1",
+  "description": "Lightweight Programmable SMS support for our wedding",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production coffee src/server.coffee",
+    "start:dev": "NODE_ENV=development coffee src/server.coffee",
+    "test": "jest"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "preset": "jest-preset-coffeescript",
+    "testPathIgnorePatterns": [
+      "setup.coffee"
+    ]
+  },
+  "author": "Darius Calliet <calliet.d@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "co": "4.6.x",
+    "coffeescript": "2.4.x",
+    "csv": "5.1.x",
+    "googleapis": "27.0.x",
+    "koa": "2.7.x",
+    "koa-bodyparser": "4.2.x",
+    "koa-formidable": "1.1.x",
+    "koa-router": "7.4.x",
+    "lodash": "4.17.x",
+    "minimist": "^1.2.0",
+    "moment-timezone": "0.5.x",
+    "nodemailer": "6.1.x",
+    "papaparse": "4.6.x",
+    "phone": "2.3.x",
+    "redis": "2.8.x",
+    "twilio": "3.30.x",
+    "xml-js": "^1.6.11"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.x",
+    "babel-preset-env": "1.7.x",
+    "jest": "24.7.x",
+    "jest-preset-coffeescript": "1.0.x",
+    "superagent": "5.0.x",
+    "supertest": "4.0.x",
+    "ngrok": "3.1.x"
+  }
+}
